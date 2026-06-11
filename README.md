@@ -11,7 +11,7 @@ inkwell-fullstack/
 ├── client/                     ← React + Vite Frontend
 │   ├── index.html
 │   ├── vite.config.js
-│   ├── .env                    ← VITE_API_URL=http://localhost:5000
+│   ├── .env                    ← VITE_API_URL
 │   ├── package.json
 │   └── src/
 │       ├── main.jsx
@@ -45,15 +45,14 @@ inkwell-fullstack/
 ```bash
 cd server
 npm install
-# Edit .env → set your MONGO_URI
-npm run dev       # runs on http://localhost:5000
+npm run dev     
 ```
 
 ### 2. Start the Frontend
 ```bash
 cd client
 npm install
-npm run dev       # runs on http://localhost:3000
+npm run dev      
 ```
 
 ---
@@ -70,13 +69,6 @@ npm run dev       # runs on http://localhost:3000
 
 ---
 
-## Environment Variables
-
-**server/.env**
-```
-PORT=5000
-MONGO_URI=mongodb://localhost:27017/inkwell
-```
 
 **client/.env**
 ```
